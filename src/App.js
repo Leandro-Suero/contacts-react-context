@@ -6,14 +6,18 @@ import "./App.css";
 import Header from "./components/layout/Header";
 import Contacts from "./components/contacts/Contacts";
 
+import { Provider } from "./context";
+
 function App() {
     return (
-        <div className="App">
-            <Header title="Contact Manager" />
-            <div className="container">
-                <Contacts />
+        <Provider>
+            <div className="App">
+                <Header title="Contact Manager" />
+                <div className="container">
+                    <Contacts />
+                </div>
             </div>
-        </div>
+        </Provider>
     );
 }
 
