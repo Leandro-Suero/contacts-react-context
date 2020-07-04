@@ -9,8 +9,8 @@ class Contact extends Component {
     onShowClick = () => {
         this.setState({ showContactInfo: !this.state.showContactInfo });
     };
+
     onDeleteClick = (id, dispatch) => {
-        console.log("del");
         dispatch({ type: "DELETE_CONTACT", payload: id });
     };
 

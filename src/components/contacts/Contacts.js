@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Contact from "./Contact";
 import { Consumer } from "../../context";
+import AddContact from "./AddContact";
 
 class Contacts extends Component {
     deleteContact = (id) => {
@@ -18,6 +19,7 @@ class Contacts extends Component {
                     const { contacts } = contextState;
                     return (
                         <React.Fragment>
+                            <AddContact />
                             <h1 className="">Contactos</h1>
                             {contacts.map((contact) => (
                                 <Contact key={contact.id} contact={contact} />
