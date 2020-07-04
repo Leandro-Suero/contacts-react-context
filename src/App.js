@@ -9,6 +9,7 @@ import Header from "./components/layout/Header";
 import About from "./components/pages/About";
 import NotFound from "./components/pages/NotFound";
 import AddContact from "./components/contacts/AddContact";
+import EditContact from "./components/contacts/EditContact";
 
 import { Provider } from "./context";
 
@@ -26,6 +27,11 @@ function App() {
                                 exact
                                 path="/contact/add"
                                 component={AddContact}
+                            />
+                            <Route
+                                exact
+                                path="/contact/edit/:id"
+                                component={EditContact}
                             />
                             <Route component={NotFound} />
                         </Switch>

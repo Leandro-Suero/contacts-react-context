@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { Consumer } from "../../context";
 import axios from "axios";
 
@@ -47,6 +48,17 @@ class Contact extends Component {
                                         color: "red",
                                     }}
                                 ></i>
+                                <Link to={`contact/edit/${id}`}>
+                                    <i
+                                        className="fas fa-pencil-alt"
+                                        style={{
+                                            cursor: "pointer",
+                                            float: "right",
+                                            color: "black",
+                                            marginRight: "1rem",
+                                        }}
+                                    ></i>
+                                </Link>
                             </h4>
                             {this.state.showContactInfo && (
                                 <ul className="list-group">
