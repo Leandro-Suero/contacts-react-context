@@ -29,8 +29,9 @@ class AddContact extends Component {
 
         const newContact = { name, email, phone, id: 69 };
         dispatch({ type: "ADD_CONTACT", payload: newContact });
-
+        //clear state
         this.setState({ name: "", email: "", phone: "", errors: {} });
+        this.props.history.push("/");
     };
 
     handleChange = (evt) => {
