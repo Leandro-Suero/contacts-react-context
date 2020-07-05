@@ -1,3 +1,7 @@
+## Description
+
+This is a simple contacts tracker project to try the context api and compare the same app but using redux instead in another project. That project's repository it's named "contacts-react-redux".
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
